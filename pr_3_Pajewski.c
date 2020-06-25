@@ -5,8 +5,8 @@
 #define TRUE 1
 /*This code is parallel implementation of Cholesky decomposition of a symmetric matrix. It works for any rank=n.
 Calcultions are done sequentionally column after column (only diagonal and below diagonal elements are calculated). Program is meant to 
-be compiled with MPICC: unix command "mpicc cholesky.c -o cholesky -std=c99 -lm" will produce file "cholesky" which is meant to be run with n or more
-processors.
+be compiled with MPICC: unix command "mpicc cholesky.c -o cholesky -std=c99 -lm" will produce file "cholesky". To fully make use of pararalelity run code with 
+n processors or more.  
 */
 int main(int argc, char** argv) {
   // Initialize the MPI environment
