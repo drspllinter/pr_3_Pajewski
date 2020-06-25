@@ -105,13 +105,13 @@ int main(int argc, char** argv) {
 					}
 				}
 			}
-			fprintf(fp, "%d, %d, %d\n", n, n, a);
+			fprintf(fp, "%d %d %d\n", n, n, a);
 			for (int i=0; i<n; i++)
 			{
 				for (int j=0; j<i; j++)
 				{
 					if (M[i][j]!=0)
-					  fprintf(fp, "%d, %d, %f\n", i, j, M[i][j]);
+					  fprintf(fp, "%d %d %f\n", i, j, M[i][j]);
 				}
 			}
 		}	
